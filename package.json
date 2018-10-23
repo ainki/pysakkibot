@@ -1,0 +1,23 @@
+{
+  "name": "pysakkibot-2.0",
+  "version": "0.0.1",
+  "description": "Telegram botti HSL aikatauluille.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ainki/Pysakkibot-2.0.git"
+  },
+  "author": "Ainki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ainki/Pysakkibot-2.0/issues"
+  },
+  "homepage": "https://github.com/ainki/Pysakkibot-2.0#readme",
+  "dependencies": {
+    "console-stamp": "^0.2.7",
+    "telebot": "^1.2.6"
+  }
+}
