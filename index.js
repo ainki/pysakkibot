@@ -5,6 +5,8 @@ const bot = require('./bot')
 const replyMarkup = require('./lib/flow/nappaimisto')
 const hae = require('./lib/functions/hae')
 const sijainti = require('./lib/functions/sijainti')
+const admin = require('./lib/functions/admin')
+const linja = require('./lib/functions/linja')
 
 //NPM
 require('console-stamp')(console, 'HH:MM:ss'); //Aikaleimat logiin
@@ -37,8 +39,21 @@ bot.on('/menu', msg => {
     return console.log("[info] Menu avattu!")
 });
 
+bot.on('/admin', (msg) => {
+    return admin.admin(msg.chat.id)
+});
+
+bot.on('/adminhairio', (msg) => {
+    return admin.adminhairio(msg.chat.id)
+})
+    
+
 bot.on('/hae', msg => {
     return hae(msg.chat.id, msg.text);
+})
+
+bot.on('/linja', msg => {
+    return linja(msg.chat.id, msg.text);
 })
 
 bot.on(['location'], (msg, self) => {
