@@ -5,6 +5,7 @@ const bot = require('./bot')
 const replyMarkup = require('./lib/flow/nappaimisto')
 const hae = require('./lib/functions/hae')
 const sijainti = require('./lib/functions/sijainti')
+
 //NPM
 require('console-stamp')(console, 'HH:MM:ss'); //Aikaleimat logiin
 
@@ -25,7 +26,7 @@ bot.on('/start', (msg) => {
 // /help
 bot.on('/help', (msg) => {
     //Lähettää viestin
-    bot.sendMessage(msg.from.id, `${msg.from.first_name} tarvitsetko apua? Tässä lisäohjeita:\n\nVoi etsiä pysäkkejä kirjoittamalla "/hae" ja pysäkin nimen.\nEsim. "/hae keilaniemi"\n\nVoit myös lähettää sijaintisi ja saadä lähistöltä lähdöt. Jos lähelläsi ei ole pysäkkejä, kokeile lähettää sijainti pysäkin läheltä.\n\nJos löydät bugin voit reportoida sen tekemällä /bugi\n\nMukavaa matkaa! 😊`); //Vastaa kun käyttäjä käyttää /start komentoa
+    bot.sendMessage(msg.from.id, `Hei ${msg.from.first_name}. Täältä löytyy apua!\n\nVoit etsiä pysäkkejä tekemällä ”/hae” ja antamalla pysäkin nimen tai koodin esim.: ”/hae Keilaniemi”. Valitse tämän jälkeen oikea pysäkki näppäimistöstä ja saat pysäkin lähdöt.\n\nVoit myös lähettää sijaintisi painamalla näppäimistöstä ”Sijainnin mukaan 📍” näppäintä. Saat lähistön seuraavat lähdöt.\n\nJos kellonajan perässä on piste, se kertoo että kellonaika on reaaliaikainen ennuste linjan saapumisajasta.\n\nJos löydät bugin tai jotain epätavallista voit reportoida sen kehittäjälle: http://bit.ly/2CBok6s\n\nMukavaa matkaa! 😊`); //Vastaa kun käyttäjä käyttää /start komentoa
     return console.log("[info] Help viesti lähetetty!")
 });
 
