@@ -2,6 +2,7 @@
 //  Pysäkkibot-2.0
 //
 
+//NPM
 const TeleBot = require('telebot');
 
 //BotToken
@@ -16,4 +17,4 @@ const bot = new TeleBot({
     }
 });
 
-module.exports = bot
+module.exports = bot;
