@@ -38,7 +38,7 @@ bot.on('/menu', msg => {
     bot.sendMessage(msg.chat.id, 'Valitse toiminto', { replyMarkup });
     return console.log("[info] Menu avattu!")
 });
-/*
+
 bot.on('/admin', (msg) => {
     return admin.admin(msg.chat.id)
 });
@@ -46,15 +46,15 @@ bot.on('/admin', (msg) => {
 bot.on('/adminhairio', (msg) => {
     return admin.adminhairio(msg.chat.id)
 })  
-**/
+
 bot.on('/hae', msg => {
     return hae(msg.chat.id, msg.text);
 })
-/*
+
 bot.on('/linja', msg => {
     return linja(msg.chat.id, msg.text);
 })
-**/
+*
 bot.on(['location'], (msg, self) => {
     return sijainti(msg.chat.id, msg.location);
 });

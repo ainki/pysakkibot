@@ -1,8 +1,8 @@
 {
   "name": "pysakkibot-2.0",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "Telegram botti HSL aikatauluille.",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +23,9 @@
     "jsonpath": "^1.0.0",
     "limit-string-length": "0.0.9",
     "telebot": "^1.2.6"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
