@@ -1,0 +1,1 @@
+forever -a -o out.log index.js
