@@ -21,14 +21,14 @@ bot.on('text', function (msg) {
 // /start
 bot.on('/start', (msg) => {
     //Lähettää viestin ja näppäimistön
-    bot.sendMessage(msg.chat.id, `Hei, ${msg.from.first_name}! Tervetuloa käyttämään pysäkkibottia!\n\nVoit aloittaa käytön kirjoittamalla /hae ja pysäkin nimen tai koodin.\n\nVoit vaihtoehtoisesti myös lähettää sijaintisi ja saada lähistöltäsi seuraavat lähdöt!\n\nJos tarvitset lisää apua tee /help! 😄`, { replyMarkup }); //Vastaa kun käyttäjä käyttää /start komentoa
+    bot.sendMessage(msg.chat.id, `Hei, ${msg.from.first_name}! Tervetuloa käyttämään pysäkkibottia!\n\nVoit aloittaa käytön kirjoittamalla /hae ja pysäkin nimen tai koodin.\n\nVoit etsiä aikatauluja tietylle linjalle pysäkiltä tekemällä /linja ja seuraamalla ohjeita\n\nVoit vaihtoehtoisesti myös lähettää sijaintisi ja saada lähistöltäsi seuraavat lähdöt!\n\nJos tarvitset lisää apua tee /help! 😄`, { replyMarkup }); //Vastaa kun käyttäjä käyttää /start komentoa
     return console.log("[info] Start viesti lähetetty!")
 });
 
 // /help
 bot.on('/help', (msg) => {
     //Lähettää viestin
-    bot.sendMessage(msg.chat.id, `Hei ${msg.from.first_name}. Täältä löytyy apua!\n\nVoit etsiä pysäkkejä tekemällä ”/hae” ja antamalla pysäkin nimen tai koodin esim.: ”/hae Keilaniemi”. Valitse tämän jälkeen oikea pysäkki näppäimistöstä ja saat pysäkin lähdöt.\n\nVoit myös lähettää sijaintisi painamalla näppäimistöstä ”Sijainnin mukaan 📍” näppäintä. Saat lähistön seuraavat lähdöt.\n\nJos kellonajan perässä on piste, se kertoo että kellonaika on reaaliaikainen ennuste linjan saapumisajasta.\n\nJos löydät bugin tai jotain epätavallista voit reportoida sen kehittäjälle: http://bit.ly/2CBok6s\n\nMukavaa matkaa! 😊`); //Vastaa kun käyttäjä käyttää /start komentoa
+    bot.sendMessage(msg.chat.id, `Hei ${msg.from.first_name}. Täältä löytyy apua!\n\nVoit etsiä pysäkkejä tekemällä ”/hae” ja antamalla pysäkin nimen tai koodin esim.: ”/hae Keilaniemi”. Valitse tämän jälkeen oikea pysäkki näppäimistöstä ja saat pysäkin lähdöt.\n\nVoit etsiä tietyn linjan lähdöt tietyltä pysäkiltä tekemäälä /linja. Seuraamalla ohjeita saat linjan seuraavat lähdöt tietyltä pysäkiltä. Tämä ominaisuus on vielä hieman kesken, joten virheitä saattaa esiintyä.\n\nVoit myös lähettää sijaintisi painamalla näppäimistöstä ”Sijainnin mukaan 📍” näppäintä. Saat lähistön seuraavat lähdöt.\n\nJos kellonajan perässä on piste, se kertoo että kellonaika on reaaliaikainen ennuste linjan saapumisajasta.\n\nJos löydät bugin tai jotain epätavallista voit reportoida sen kehittäjälle: http://bit.ly/2CBok6s\n\nMukavaa matkaa! 😊`); //Vastaa kun käyttäjä käyttää /start komentoa
     return console.log("[info] Help viesti lähetetty!")
 });
 
