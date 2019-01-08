@@ -32,6 +32,11 @@ bot.on('/help', (msg) => {
     return console.log("[info] Help viesti lähetetty!")
 });
 
+bot.on('/about', (msg) => {
+    // Lähettää viestin
+    bot.sendMessage(msg.chat.id, `Pysäkkibot    Made by @ainki\n\nPysäkkibot käyttää digitransitin avointa reaaliaikaista dataa. Pysäkkibotin lähdekoodi löytyy: https://github.com/ainki/Pysakkibot-2.0 \n\nPoikkeusinfo: t.me/poikkeusinfohsl\nKaupunkipyörät: @kaupunkipyorabot`)
+})
+
 // /menu
 bot.on('/menu', msg => {
     //Lähettää viestin ja näppäimistön
@@ -43,10 +48,6 @@ bot.on('/admin', (msg) => {
     return admin.admin(msg.chat.id)
 });
 
-bot.on('/adminhairio', (msg) => {
-    return admin.adminhairio(msg.chat.id)
-})  
-
 bot.on('/hae', msg => {
     return hae(msg.chat.id, msg.text);
 })
@@ -54,7 +55,7 @@ bot.on('/hae', msg => {
 bot.on('/linja', msg => {
     return linja(msg.chat.id, msg.text);
 })
-*
+
 bot.on(['location'], (msg, self) => {
     return sijainti(msg.chat.id, msg.location);
 });
