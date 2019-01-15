@@ -7,6 +7,7 @@ const hae = require('./lib/functions/hae')
 const sijainti = require('./lib/functions/sijainti')
 const admin = require('./lib/functions/admin')
 const linja = require('./lib/functions/linja')
+const poikkeus = require('./lib/functions/poikkeus')
 
 //NPM
 require('console-stamp')(console, 'HH:MM:ss'); //Aikaleimat logiin
@@ -54,6 +55,10 @@ bot.on('/hae', msg => {
 
 bot.on('/linja', msg => {
     return linja(msg.chat.id, msg.text);
+})
+
+bot.on('/poikkeukset', msg => {
+    return poikkeus(msg.chat.id);
 })
 
 bot.on(['location'], (msg, self) => {
