@@ -1,10 +1,11 @@
 {
   "name": "pysakkibot-2.0",
-  "version": "2.0.0",
+  "version": "2.4.2",
   "description": "Telegram botti HSL aikatauluille.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,7 @@
     "console-stamp": "^0.2.7",
     "graphql-request": "^1.8.2",
     "hh-mm-ss": "^1.2.0",
-    "jsonpath": "^1.0.0",
+    "jsonpath": "^1.0.1",
     "limit-string-length": "0.0.9",
     "nodemon": "^1.18.9",
     "telebot": "^1.2.6"

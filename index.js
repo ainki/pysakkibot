@@ -35,7 +35,7 @@ bot.on('/help', (msg) => {
 
 bot.on('/about', (msg) => {
     // Lähettää viestin
-    bot.sendMessage(msg.chat.id, `Pysäkkibot 2.3.0\nMade by @ainki\n\nPysäkkibot käyttää digitransitin avointa reaaliaikaista dataa. Pysäkkibotin lähdekoodi löytyy: https://github.com/ainki/Pysakkibot-2.0 \n\nPoikkeusinfo: t.me/poikkeusinfohsl\nKaupunkipyörät: @kaupunkipyorabot`)
+    bot.sendMessage(msg.chat.id, `Pysäkkibot 2.4.2\nMade by @ainki\n\nPysäkkibot käyttää digitransitin avointa reaaliaikaista dataa. Pysäkkibotin lähdekoodi löytyy: https://github.com/ainki/Pysakkibot-2.0 \n\nPoikkeusinfo: t.me/poikkeusinfohsl\nKaupunkipyörät: @kaupunkipyorabot`)
 })
 
 // /menu
