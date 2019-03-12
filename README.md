@@ -3,7 +3,6 @@
 ## Pysäkkibot 2.0
 
 Telegram botti, jolla saa HSL aikatauluja suoraan telegramiin.
-Tässä repossa takennetaan uutta versiota.
 
 ###### Pysäkkibot
 [Klikkaa tästä niin pääset käyttämään bottia!](http://t.me/pysakkibot)
