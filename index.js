@@ -5,7 +5,6 @@ const bot = require('./bot')
 const replyMarkup = require('./lib/flow/nappaimisto')
 const hae = require('./lib/functions/hae')
 const sijainti = require('./lib/functions/sijainti')
-const admin = require('./lib/functions/admin')
 const linja = require('./lib/functions/linja')
 const poikkeus = require('./lib/functions/poikkeus')
 
@@ -43,10 +42,6 @@ bot.on('/menu', msg => {
     //Lähettää viestin ja näppäimistön
     bot.sendMessage(msg.chat.id, 'Valitse toiminto', { replyMarkup });
     return console.log("[info] Menu avattu!")
-});
-
-bot.on('/admin', (msg) => {
-    return admin.admin(msg.chat.id)
 });
 
 bot.on('/hae', msg => {
