@@ -1,14 +1,14 @@
 //
 //  Pysäkkibot-2.0
-//  Made by ainki
 //
+// Do not commit this file with a token or without any changes!
 
 //NPM
 const TeleBot = require('telebot');
 
 //BotToken
 const bot = new TeleBot({
-    token: 'TOKMEN',
+    token: 'TOKEN',
     usePlugins: ['askUser', 'floodProtection', 'namedButtons'],
     pluginConfig: {
         floodProtection: {
