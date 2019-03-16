@@ -9,10 +9,10 @@ const TeleBot = require('telebot');
 //BotToken
 const bot = new TeleBot({
     token: 'TOKEN',
-    usePlugins: ['askUser', 'floodProtection'],
+    usePlugins: ['askUser', 'floodProtection', 'namedButtons'],
     pluginConfig: {
         floodProtection: {
-            interval: 0.7,
+            interval: 0.5,
             message: 'Ota iisisti ja relaa 😤'
         }
     }
