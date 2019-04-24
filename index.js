@@ -7,6 +7,7 @@ const hae = require('./lib/functions/hae')
 const sijainti = require('./lib/functions/sijainti')
 const linja = require('./lib/functions/linja')
 const poikkeus = require('./lib/functions/poikkeus')
+const pysakkiCheck = require('./lib/functions/pysakkiCheck')
 
 // npm
 require('console-stamp')(console, 'HH:MM:ss'); //Aikaleimat logiin
@@ -56,5 +57,9 @@ bot.on('/poikkeukset', msg => {
 bot.on(['location'], (msg, self) => {
     return sijainti(msg.chat.id, msg.location);
 });
+
+bot.on('*', msg => {
+    return pysakkiCheck(msg.chat.id, msg.text); 
+})
 
 bot.start();
