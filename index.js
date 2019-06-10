@@ -22,7 +22,7 @@ bot.on('text', function (msg) {
 
 bot.on('/start', (msg) => {
     //Lähettää viestin ja näppäimistön
-    bot.sendMessage(msg.chat.id, `Hei, ${msg.from.first_name}! Tervetuloa käyttämään pysäkkibottia!\n\nVoit aloittaa käytön kirjoittamalla /hae ja pysäkin nimen tai koodin.\n\nPysäkin sijainnin ja lähdöt saat tekemällä /pysakki ja antamalla pysakin nimen tai koodin.\n\nVoit etsiä aikatauluja tietylle linjalle pysäkiltä tekemällä /linja ja seuraamalla ohjeita\n\nVoit vaihtoehtoisesti myös lähettää sijaintisi ja saada lähistöltäsi seuraavat lähdöt!\n\nJos tarvitset lisää apua tee /help! 😄`, { replyMarkup }); //Vastaa kun käyttäjä käyttää /start komentoa
+    bot.sendMessage(msg.chat.id, `Hei, ${msg.from.first_name}! Tervetuloa käyttämään pysäkkibottia!\n\nVoit aloittaa käytön kirjoittamalla /hae ja pysäkin nimen tai koodin.\n\nPysäkin sijainnin ja lähdöt saat tekemällä /pysakki ja antamalla pysakin nimen tai koodin.\n\nVoit etsiä aikatauluja tietylle linjalle pysäkiltä tekemällä /linja ja seuraamalla ohjeita\n\nVoit vaihtoehtoisesti myös lähettää sijaintisi ja saada lähistöltäsi seuraavat lähdöt!\n\nJos tarvitset lisää apua tee /help! 😄\n\nTehty käyttäen digitransitin avointa dataa. Digitransit.fi`, { replyMarkup }); //Vastaa kun käyttäjä käyttää /start komentoa
     return console.log("[info] Start viesti lähetetty!")
 });
 
