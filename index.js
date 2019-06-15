@@ -72,10 +72,11 @@ bot.on('/pysakki', (msg) => {
       return pysakki(msg.chat.id, msg.text);
 });
   bot.on('*', msg => {
+    if (typeof(msg.text) == "string") {
     setTimeout(function () {
-        return pysakkiCheck(msg.chat.id, msg.text, viimekomento);
+return pysakkiCheck(msg.chat.id, msg.text, viimekomento);
     }, 10);
-
+}
   })
 
 
