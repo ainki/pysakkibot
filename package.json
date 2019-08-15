@@ -18,13 +18,13 @@
   },
   "homepage": "https://github.com/ainki/Pysakkibot#readme",
   "dependencies": {
-    "console-stamp": "^0.2.7",
+    "console-stamp": "^0.2.9",
     "date-and-time": "^0.6.3",
     "graphql-request": "^1.8.2",
     "hh-mm-ss": "^1.2.0",
-    "jsonpath": "^1.0.1",
+    "jsonpath": "^1.0.2",
     "limit-string-length": "0.0.9",
-    "nodemon": "^1.18.9",
+    "nodemon": "^1.19.1",
     "telebot": "^1.2.6"
   },
   "directories": {
