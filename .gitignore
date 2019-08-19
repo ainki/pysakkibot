@@ -3,3 +3,4 @@ node_modules/
 data.json
 package-lock.json
 bot.js
+.DS_Store
