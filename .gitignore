@@ -5,3 +5,4 @@ package-lock.json
 bot.js
 .DS_Store
 liitynnat.js
+/nbproject/private/
