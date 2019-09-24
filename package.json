@@ -26,6 +26,8 @@
     "limit-string-length": "0.0.9",
     "moment": "^2.24.0",
     "nodemon": "^1.19.1",
+    "nodemon": "^1.19.2",
+    "stringz": "^2.0.0",
     "telebot": "^1.2.6"
   },
   "directories": {
