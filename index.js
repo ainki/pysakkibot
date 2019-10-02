@@ -54,9 +54,9 @@ bot.on('/linja', msg => {
 });
 
 bot.on('/poikkeukset', msg => {
-      viimekomento = '/poikkeukset';
-    return poikkeus(msg.chat.id);
-});
+      viimekomento = '/poikkeukset'
+    return poikkeus(msg.chat.id, msg.text);
+})
 
 bot.on(['location'], (msg, self) => {
       viimekomento = 'location';
