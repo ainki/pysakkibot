@@ -10,6 +10,7 @@ const poikkeus = require('./lib/functions/poikkeus');
 const pysakkiCheck = require('./lib/functions/pysakkiCheck');
 const pysakki = require('./lib/functions/pysakki');
 const liitynta = require('./lib/functions/liitynta');
+const reitti = require('./lib/functions/reitti');
 
 let viimekomento = "";
 // npm
