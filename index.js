@@ -77,6 +77,11 @@ bot.on('/liitynta', (msg) => {
     //Lähettää viestin
     return liitynta(msg.chat.id, msg.text);
 });
+bot.on('/reitti', (msg) => {
+  viimekomento = "/reitti";
+    //Lähettää viestin
+    return reitti(msg.chat.id, msg.text);
+});
   bot.on('*', msg => {
     if (typeof(msg.text) === "string") {
     setTimeout(function () {
