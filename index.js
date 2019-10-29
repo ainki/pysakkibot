@@ -26,7 +26,7 @@ bot.on('text', function (msg) {
 bot.on('/start', (msg) => {
   viimekomento = "/start";
   //Lähettää viestin ja näppäimistön
-  bot.sendMessage(msg.chat.id, `Hei, ${msg.from.first_name}! Tervetuloa käyttämään pysäkkibottia!\n\nVoit aloittaa käytön kirjoittamalla /hae ja pysäkin nimen tai koodin.\n\nPysäkin sijainnin ja lähdöt saat tekemällä /pysakki ja antamalla pysakin nimen tai koodin.\n\nVoit etsiä aikatauluja tietylle linjalle pysäkiltä tekemällä /linja ja seuraamalla ohjeita\n\nVoit vaihtoehtoisesti myös lähettää sijaintisi ja saada lähistöltäsi seuraavat lähdöt!\n\nJos tarvitset lisää apua tee /help! 😄\n\nTehty käyttäen digitransitin avointa dataa. Digitransit.fi`, { replyMarkup }); //Vastaa kun käyttäjä käyttää /start komentoa
+  bot.sendMessage(msg.chat.id, `<b>Hei, ${msg.from.first_name}! Tervetuloa käyttämään Pysäkkibottia!</b>\n\n/hae\nHae aikatauluja pysäkin mukaan. Kirjoita pysäkin nimi tai koodia ja saat pysäkin seuraavat 10 lähtöä.\n\n/reitti  🆕\nHae reittiohjeita paikasta A paikkaan B. Anna vain lähtöpaikka ja määränpää!\n\n/linja\nHae lähöjä tietylle linjalle tietyltä pysäkiltä.\n\n/liitynta\nHae liityntäpysäköinnin tietoja. Realiaikainen data saavilla vasta muutamilla pysäköintialueella.\n\n/pysakki\nHae aikatauluja ja pysäkin sijaintia pysäkin nimen tai koodin perusteella.\n\nVoit myös lähettää sijaintisi ja saat lähistön seuraavat lähdöt.\n\nJos tarvitset lisää apua tee /help! 😄\n\n<b>Kiitos kun käytät Pysäkkibottia!</b>`, { replyMarkup, parseMode: 'html' }); //Vastaa kun käyttäjä käyttää /start komentoa
   return console.info("Start viesti lähetetty!");
 });
 
