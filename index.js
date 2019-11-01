@@ -55,7 +55,7 @@ bot.on('/linja', msg => {
 });
 
 bot.on('/poikkeukset', msg => {
-  viimekomento = '/poikkeukset'
+  viimekomento = '/poikkeukset';
   return poikkeus(msg.chat.id, msg.text);
 });
 
@@ -85,7 +85,7 @@ bot.on('/liitynta', (msg) => {
 bot.on('/reitti', (msg) => {
   viimekomento = "/reitti";
   //Lähettää viestin
-  return reitti(msg.chat.id, msg.text);
+  return reitti(msg);
 });
 
 bot.on('*', msg => {
