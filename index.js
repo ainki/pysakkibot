@@ -30,20 +30,20 @@ bot.on('text', function (msg) {
   console.log(`[text] ${msg.chat.id}: ${msg.text}`);
 
   // Chatbase analytics
-  set.newMessage()
-	.setMessage(`${msg.text}`)
-	.setUserId(`${msg.chat.id}`)
-  .setClientTimeout(10000)
+  // set.newMessage()
+	// .setMessage(`${msg.text}`)
+	// .setUserId(`${msg.chat.id}`)
+  // .setClientTimeout(10000)
   
-  set.sendMessageSet()
-	.then(set => {
-		// The API accepted our request!
-		console.log(set.getCreateResponse());
-	})
-	.catch(error => {
-		// Something went wrong!
-		console.error(error);
-	})
+  // set.sendMessageSet()
+	// .then(set => {
+	// 	// The API accepted our request!
+	// 	console.log(set.getCreateResponse());
+	// })
+	// .catch(error => {
+	// 	// Something went wrong!
+	// 	console.error(error);
+	// })
 
 });
 
