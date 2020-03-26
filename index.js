@@ -15,10 +15,36 @@ const reitti = require('./lib/functions/reitti');
 let viimekomennot = [];
 // npm
 require('console-stamp')(console, 'HH:MM:ss'); //Aikaleimat logiin
+// chatbase
+var chatbase = require('@google/chatbase')
+
+const set = chatbase.newMessageSet()
+	// The following are optional setters which will produce new messages with
+	// the corresponding fields already set!
+	.setApiKey(process.env.chatbasetoken)
+  .setPlatform('Telegram')
+  .setVersion('V1.0');
 
 // Logaa jokaisen sisääntulevan viestin consoliin
 bot.on('text', function (msg) {
   console.log(`[text] ${msg.chat.id}: ${msg.text}`);
+
+  // Chatbase analytics
+  // set.newMessage()
+	// .setMessage(`${msg.text}`)
+	// .setUserId(`${msg.chat.id}`)
+  // .setClientTimeout(10000)
+  
+  // set.sendMessageSet()
+	// .then(set => {
+	// 	// The API accepted our request!
+	// 	console.log(set.getCreateResponse());
+	// })
+	// .catch(error => {
+	// 	// Something went wrong!
+	// 	console.error(error);
+	// })
+
 });
 
 //Peruskomennot
