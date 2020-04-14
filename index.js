@@ -34,7 +34,7 @@ bot.on('text', function (msg) {
 	// .setMessage(`${msg.text}`)
 	// .setUserId(`${msg.chat.id}`)
   // .setClientTimeout(10000)
-  
+
   // set.sendMessageSet()
 	// .then(set => {
 	// 	// The API accepted our request!
@@ -74,7 +74,7 @@ bot.on('/menu', msg => {
 
 bot.on('/hae', msg => {
   viimekomennot = paivitaViimeKomento(viimekomennot,"/hae", msg.from.id);
-  return hae(msg.chat.id, msg.text);
+  return hae(msg);
 });
 
 bot.on('/linja', msg => {
@@ -89,13 +89,6 @@ bot.on('/poikkeukset', msg => {
 
 bot.on(['location'], (msg) => {
   console.log("[location]"+ msg.from.id);
-for (var i = 0; i < viimekomennot.length; i++) {
-  console.log("viimekomennot[i] loc"+JSON.stringify(viimekomennot[i]));
-  if (viimekomennot[i].komento === "/reitti" && viimekomennot[i].id === msg.from.id) {
-return;
-  }
-}
-viimekomennot = paivitaViimeKomento(viimekomennot,"location", msg.from.id);
  return sijainti(msg.chat.id, msg.location);
 });
 
@@ -126,7 +119,7 @@ bot.on('/reitti', (msg) => {
 bot.on('*', msg => {
   if (typeof (msg.text) === "string") {
     setTimeout(function () {
-      return pysakkiCheck(msg.chat.id, msg.text, viimekomennot);
+      return pysakkiCheck(msg, msg.text, viimekomennot);
     }, 10);
   }
 });
