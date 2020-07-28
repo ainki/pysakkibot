@@ -79,7 +79,7 @@ bot.on('/hae', msg => {
 
 bot.on('/linja', msg => {
   viimekomennot = paivitaViimeKomento(viimekomennot,"/linja", msg.from.id);
-  return linja(msg.chat.id, msg.text);
+  return linja(msg);
 });
 
 bot.on('/poikkeukset', msg => {
