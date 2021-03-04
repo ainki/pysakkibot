@@ -1,7 +1,7 @@
 {
   "name": "pysakkibot",
-  "version": "2.4.5",
-  "description": "Telegram botti HSL aikatauluille.",
+  "version": "2.5.0",
+  "description": "Tekstipohjainen HSL reittiopas Telegram bottina.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
