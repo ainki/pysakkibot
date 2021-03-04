@@ -54,6 +54,13 @@ Jos haluat etsiä enemmän kuin 10 lähtöä lisää vain pysäkin koodin jälke
 ```
 > /V0662, 20
 ```
+
+#### /pysakki tai /pys
+Toimii kuin /hae, mutta vastaukseksi saat vastauksena myös pysäkin sijainnin.
+```
+> /pysakki E3311
+```
+
 ### Merkkien merkitykset
 Kun etsit aikatauluja, kellonajan jälkeen voi olla "•". Tämä tarkoittaa, että kellonaika on reaaliajassa. Ilman merkkiä "•" kellonaika on aikataulun mukainen lähtöaika.
 ```
@@ -93,4 +100,33 @@ Voit lisätä komentoon myös halutun lähtöajan:
 Myös päivämäärän voi lisätä:
 ```
 > /reitti Kompassikatu 9 A, H0822, 14:15 10.3
+```
+### /liitynta
+Hae liityntäpysäköinnin tietoja sen nimellä tai numerolla. Realiaikainen data saavilla vasta muutamilla pysäköintialueella.
+```
+> /liitynta ruoholahti
+```
+### /linja
+Hae lähöjä tietylle linjalle tietyltä pysäkiltä. Anna linjan tunnus ja valitse pysäkki ja saat 10 seuraavaa lähtöä.
+```
+> /linja 112
+
+Määränpäät linjalle 112:
+
+1 - Tapiola (M)
+2 - Matinkylä (M)
+
+Valitse määränpää näppäimistöstä!
+
+> 1
+
+Valitse pysäkki näppäimistöstä!
+
+> Niittymaa
+
+Niittymaa  B
+E2134  Merituulentie
+
+14:50‌‌‎•‌‌‎   112‌‌‎ Tapiola(M)
+15:05‌‌‎•‌‌‎   112‌‌‎ Tapiola(M)...
 ```
