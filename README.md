@@ -11,7 +11,7 @@ Pääset käyttämään bottia alla olevista linkeistä:
 ###### Kaupunkipyöräbot
 [Klikkaa tästä niin pääset käyttämään kaupunkipyöräbottia!](http://t.me/kaupunkipyorabot)
 
-## Ominaisuudet
+## Ominaisuudet ja käyttöohjeet
 
 Tässä listaus kaikista ominaisuuksista. 
 Koodikentissä teksti jonka edessä on ">" on käyttäjän inputti.
