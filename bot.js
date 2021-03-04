@@ -7,8 +7,8 @@
 const TeleBot = require('telebot');
 
 //Heroku token
-var token = process.env.token;
-// var token = ''  // Lokaaliin pyörittämiseen
+// var token = process.env.token;
+var token = '791836092:AAHtu0geWlw4sKeGbDjjOfMLmqBbheSKSsw'  // Lokaaliin pyörittämiseen
 
 //BotToken
 const bot = new TeleBot({

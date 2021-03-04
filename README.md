@@ -1,4 +1,4 @@
-![](https://i.imgur.com/Q1L1kvS.png)
+![](https://i.imgur.com/CJqZIgK.png)
 
 ## Pysäkkibot 2.0
 
