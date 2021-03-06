@@ -81,7 +81,7 @@ bot.on('/poikkeukset', msg => {
 
 bot.on(['location'], (msg) => {
   console.log("[location]"+ msg.from.id);
- return sijainti(msg.chat.id, msg.location);
+ return sijainti(msg);
 });
 
 bot.on('/pys', (msg) => {
