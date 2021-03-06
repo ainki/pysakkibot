@@ -66,9 +66,10 @@ Kun etsit aikatauluja, kellonajan jälkeen voi olla "•". Tämä tarkoittaa, et
 ```
 13:12‌‌‎•‌‌‎   Reaaliaikainen lähtöaika
 13:22‌‌‎    Aikataulun mukainen lähtöaika
-13:32‌‌‎×‏‏‎   Peruttu
-13:42‌‌‎    Linjalla huomioita ℹ️
-13:52    Linjalla muutoksia ⚠️
+13:32‌‌‎⁺¹‌‌‎  Lähtöaika seuraavana päivänä
+13:42‌‌‎×‏‏‎   Peruttu
+13:52‌‌‎    Linjalla huomioita ℹ️
+14:02    Linjalla muutoksia ⚠️
 ```
 
 ### /reitti
