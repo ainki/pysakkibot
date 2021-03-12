@@ -119,8 +119,7 @@ bot.on('*', msg => {
 
 bot.start();
 function paivitaViimeKomento(komennot,komento, chatId) {
-  console.log("komennot,komento, chatId "+typeof komennot, komennot,komento, chatId);
-  if (komennot.length === 0) {
+    if (komennot.length === 0) {
     console.log(1);
   komennot.push({komento: komento, id: chatId});
   return komennot;
