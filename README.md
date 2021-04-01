@@ -34,7 +34,7 @@ H1249  Kamppi  Lait. 49
 13:35‌‌‎     213‌‌‎ Kauklahti via Espoon keskus...
 ```
 ```
->/hae
+> /hae
 
 Anna pysäkin nimi tai koodi 😄
 
@@ -103,7 +103,7 @@ Myös päivämäärän voi lisätä:
 > /reitti Kompassikatu 9 A, H0822, 14:15 10.3
 ```
 ### /liitynta
-Hae liityntäpysäköinnin tietoja sen nimellä tai numerolla. Realiaikainen data vapaista paikoista on saatavilla vasta muutamilla pysäköintialueella.
+Hae liityntäpysäköinnin tietoja sen nimellä tai numerolla. Realiaikainen data vapaista paikoista on saatavilla vasta muutamilla pysäköintialueilla.
 ```
 > /liitynta ruoholahti
 ```
