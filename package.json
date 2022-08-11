@@ -1,6 +1,6 @@
 {
   "name": "pysakkibot",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "Tekstipohjainen HSL reittiopas Telegram bottina.",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   "dependencies": {
     "console-stamp": "^0.2.9",
     "date-and-time": ">=0.14.2",
+    "dotenv": "^16.0.1",
     "graphql": "^15.4.0",
     "graphql-request": "^3.4.0",
     "hh-mm-ss": "^1.2.0",
@@ -33,6 +34,5 @@
   },
   "directories": {
     "lib": "lib"
-  },
-  "devDependencies": {}
+  }
 }
