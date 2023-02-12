@@ -1,6 +1,6 @@
 ![](https://i.imgur.com/CJqZIgK.png)
 
-## Pysäkkibot 2.0
+# Pysäkkibot 2.0
 
 Tekstipohjainen HSL reittiopas Telegram-bottina.
 
@@ -150,3 +150,11 @@ Jokela - Tu0104 → 108m
 
 ```
 Lisää lähtöjä lähellä olevilta pysäkeiltä saa valitsemalla botin näppäimistöstä pysäkin koodin.
+
+## Pyörittäminen
+
+1. Kloonaa repo
+2. ```npm install```
+3. Kopioi .env.empty ja muuta sen nimi .env
+4. Lisää tiedoston "token" kohtaan oma telegram bot token
+5. Käynnistä botti ```npm start``` komennolla

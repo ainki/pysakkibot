@@ -5,10 +5,10 @@
 
 //NPM
 const TeleBot = require('telebot');
+require('dotenv').config();
 
 //Heroku token
-var token = process.env.token;
-//var token = ''  // Lokaaliin pyörittämiseen
+const token = process.env.token;
 
 //BotToken
 const bot = new TeleBot({

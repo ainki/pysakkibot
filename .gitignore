@@ -7,5 +7,6 @@ bot.js
 liitynnat.js
 /nbproject/private/
 .jshintrc
+.env
 nbproject/project.properties
 nbproject/project.xml
