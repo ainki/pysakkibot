@@ -1,12 +1,13 @@
+# Folders
 node_modules/
 .vscode/
-data.json
-package-lock.json
-bot.js
-.DS_Store
-liitynnat.js
 /nbproject/private/
-.jshintrc
-.env
 nbproject/project.properties
 nbproject/project.xml
+
+# Files
+data.json
+.DS_Store
+liitynnat.json
+.jshintrc
+.env
