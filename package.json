@@ -1,6 +1,6 @@
 {
   "name": "pysakkibot",
-  "version": "2.6.2",
+  "version": "2.6.3",
   "description": "Tekstipohjainen HSL reittiopas Telegram bottina.",
   "main": "index.js",
   "scripts": {

@@ -85,9 +85,9 @@ bot.on('/pysakki', (msg) => {
 })
 
 bot.on('/liitynta', (msg) => {
-  viimekomennot = paivitaViimeKomento(viimekomennot, '/liitynta', msg.from.id)
+  // viimekomennot = paivitaViimeKomento(viimekomennot, '/liitynta', msg.from.id)
   // Lähettää viestin
-  return liitynta(msg.chat.id, msg.text)
+  // return liitynta(msg.chat.id, msg.text)
 })
 
 bot.on('/reitti', (msg) => {
