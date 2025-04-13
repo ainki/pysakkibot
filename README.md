@@ -156,5 +156,5 @@ Lisää lähtöjä lähellä olevilta pysäkeiltä saa valitsemalla botin näpp�
 1. Kloonaa repo
 2. ```npm install```
 3. Kopioi .env.empty ja muuta sen nimi .env
-4. Lisää tiedoston "token" kohtaan oma telegram bot token
+4. Lisää tiedoston "token" kohtaan oma telegram bot token ja digitransitApiKey digitransitin Digitransit developer API avain
 5. Käynnistä botti ```npm start``` komennolla
